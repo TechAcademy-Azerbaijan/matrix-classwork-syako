@@ -7,4 +7,23 @@ let matrix = [
     [318, 237, 184, 36]
 ];
 
-// Write code here. 
+let sum = 0
+let sum2 = 0
+let j = matrix.length - 1; //3
+
+
+
+for(let i = 0 ; i < matrix.length ; i++){
+
+    for(let k = 0 ; k < matrix[i].length ; k++){
+
+      if(i == k){
+        sum = sum + matrix[i] [k]
+      }
+      else if(k == j - i){
+        sum2 = sum2 + matrix[i][k]
+        
+      }
+    }
+    
+}console.log(`${sum} ${sum2}`);
